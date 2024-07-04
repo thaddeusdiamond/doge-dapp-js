@@ -14,8 +14,8 @@ module.exports = {
   },
 
   output: {
-    filename: 'btc-dapp-js.js',
-    library: 'BtcDAppJs'
+    filename: 'doge-dapp-js.js',
+    library: 'DogeDAppJs'
   },
 
   plugins: [

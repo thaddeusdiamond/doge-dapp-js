@@ -1,15 +1,15 @@
 <p align="center">
-  <h1 align="center">btc-dapp-js</h1>
-  <p align="center">A library for convenient functions to use in BTC/Ordinals dApps</p>
+  <h1 align="center">doge-dapp-js</h1>
+  <p align="center">A library for convenient functions to use in Doginals dApps</p>
   <p align="center">
-    <img src="https://img.shields.io/github/commit-activity/m/thaddeusdiamond/btc-dapp-js?style=for-the-badge" />
-    <a href="https://www.npmjs.com/package/btc-dapp-js">
-      <img src="https://img.shields.io/npm/v/btc-dapp-js?style=for-the-badge" />
+    <img src="https://img.shields.io/github/commit-activity/m/thaddeusdiamond/doge-dapp-js?style=for-the-badge" />
+    <a href="https://www.npmjs.com/package/doge-dapp-js">
+      <img src="https://img.shields.io/npm/v/doge-dapp-js?style=for-the-badge" />
     </a>
-    <a href="https://www.npmjs.com/package/btc-dapp-js">
-      <img src="https://img.shields.io/npm/dw/btc-dapp-js?style=for-the-badge" />
+    <a href="https://www.npmjs.com/package/doge-dapp-js">
+      <img src="https://img.shields.io/npm/dw/doge-dapp-js?style=for-the-badge" />
     </a>
-    <img src="https://img.shields.io/npm/l/btc-dapp-js?style=for-the-badge" />
+    <img src="https://img.shields.io/npm/l/doge-dapp-js?style=for-the-badge" />
     <a href="https://twitter.com/wildtangz">
       <img src="https://img.shields.io/twitter/follow/wildtangz?style=for-the-badge&logo=twitter" />
     </a>
@@ -25,32 +25,32 @@ Recommend prerequisites for running a local NPM webapp:
 
 ### Installation
 
-Please link `btc-dapp-js` at the latest version in your `package.json` file
+Please link `doge-dapp-js` at the latest version in your `package.json` file
 and then run:
 
 ```
-npm i btc-dapp-js
+npm i doge-dapp-js
 ```
 
 ### Static Javascript Linkage
 
 A compiled version of this library is generated with each release using webpack.  To link it directly from your HTML code, please use (and optionally include the integrity attribute):
 ```html
-<script src="https://cdn.jsdelivr.net/npm/btc-dapp-js@latest/dist/btc-dapp-js.js" crossorigin="anonymous" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/doge-dapp-js@latest/dist/doge-dapp-js.js" crossorigin="anonymous" type="text/javascript"></script>
 ```
 
 ### API Samples
 
 From your React app or JavaScript client-side application, you can retrieve a user's Ordinals address with:
 ```js
-const ordinalsAddr = await Wallets.getWalletAddress(walletProvider, Wallets.ORDINALS_TYPE);
+const ordinalsAddr = await Wallets.getWalletAddress(walletProvider, Wallets.DOGINALS_TYPE);
 ```
 
-Note that the `getWalletAddress` parameters are `walletProvider` and `addressType`.  See `wallets.js` in `src/wallets/` for the full list (e.g., hiro, unisat, xverse).
+Note that the `getWalletAddress` parameters are `walletProvider` and `addressType`.  See `wallets.js` in `src/wallets/` for the full list (e.g., dogeLabs).
 
 Then, to initiate spending for the user, your JS app would call:
 ```js
-const txid = await Wallets.sendBtc(walletProvider, destAddr, amountSats, fromAddr);
+const txid = await Wallets.sendDoge(walletProvider, destAddr, dogeAmount, fromAddr);
 ```
 
 ## Testing
